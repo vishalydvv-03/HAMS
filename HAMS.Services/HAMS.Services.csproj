@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HAMS.Data\HAMS.Data.csproj" />
+    <ProjectReference Include="..\HAMS.Domain\HAMS.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
