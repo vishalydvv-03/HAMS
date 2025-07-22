@@ -1,0 +1,12 @@
+C:\Users\visha\source\repos\HAMS\HAMS.Domain\bin\Debug\net8.0\HAMS.Domain.deps.json
+C:\Users\visha\source\repos\HAMS\HAMS.Domain\bin\Debug\net8.0\HAMS.Domain.dll
+C:\Users\visha\source\repos\HAMS\HAMS.Domain\bin\Debug\net8.0\HAMS.Domain.pdb
+C:\Users\visha\source\repos\HAMS\HAMS.Domain\obj\Debug\net8.0\HAMS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\visha\source\repos\HAMS\HAMS.Domain\obj\Debug\net8.0\HAMS.Domain.AssemblyInfoInputs.cache
+C:\Users\visha\source\repos\HAMS\HAMS.Domain\obj\Debug\net8.0\HAMS.Domain.AssemblyInfo.cs
+C:\Users\visha\source\repos\HAMS\HAMS.Domain\obj\Debug\net8.0\HAMS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\visha\source\repos\HAMS\HAMS.Domain\obj\Debug\net8.0\HAMS.Domain.dll
+C:\Users\visha\source\repos\HAMS\HAMS.Domain\obj\Debug\net8.0\refint\HAMS.Domain.dll
+C:\Users\visha\source\repos\HAMS\HAMS.Domain\obj\Debug\net8.0\HAMS.Domain.pdb
+C:\Users\visha\source\repos\HAMS\HAMS.Domain\obj\Debug\net8.0\ref\HAMS.Domain.dll
+C:\Users\visha\source\repos\HAMS\HAMS.Domain\obj\Debug\net8.0\HAMS.Domain.sourcelink.json
