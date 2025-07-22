@@ -83,7 +83,7 @@ namespace HAMS.Data.Migrations
                         new
                         {
                             DepartmentId = 1,
-                            CreatedAt = new DateTime(2025, 7, 15, 11, 55, 38, 957, DateTimeKind.Utc).AddTicks(9545),
+                            CreatedAt = new DateTime(2025, 7, 22, 4, 20, 50, 141, DateTimeKind.Utc).AddTicks(9718),
                             DeptName = "Cardiology",
                             Description = "Heart & vascular care",
                             IsActive = true
@@ -91,7 +91,7 @@ namespace HAMS.Data.Migrations
                         new
                         {
                             DepartmentId = 2,
-                            CreatedAt = new DateTime(2025, 7, 15, 11, 55, 38, 957, DateTimeKind.Utc).AddTicks(9549),
+                            CreatedAt = new DateTime(2025, 7, 22, 4, 20, 50, 141, DateTimeKind.Utc).AddTicks(9720),
                             DeptName = "Orthopedics",
                             Description = "Bones, joints & spine",
                             IsActive = true
@@ -99,7 +99,7 @@ namespace HAMS.Data.Migrations
                         new
                         {
                             DepartmentId = 3,
-                            CreatedAt = new DateTime(2025, 7, 15, 11, 55, 38, 957, DateTimeKind.Utc).AddTicks(9552),
+                            CreatedAt = new DateTime(2025, 7, 22, 4, 20, 50, 141, DateTimeKind.Utc).AddTicks(9722),
                             DeptName = "Dermatology",
                             Description = "Skin & hair",
                             IsActive = true
@@ -268,20 +268,20 @@ namespace HAMS.Data.Migrations
                         {
                             UserId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ContactNo = "9876543210",
-                            CreatedAt = new DateTime(2025, 7, 15, 11, 55, 39, 34, DateTimeKind.Utc).AddTicks(7537),
+                            CreatedAt = new DateTime(2025, 7, 22, 4, 20, 50, 217, DateTimeKind.Utc).AddTicks(884),
                             Email = "admin@hams.com",
                             IsActive = true,
-                            PasswordHash = "AQAAAAIAAYagAAAAEOwPrSxyCJGtlN9YeI93vzLuC2nnKmEe54mWFIJQ+jvmmWRhGk9SqcgYYBsvSG4t/g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAECaVhtvDOJZJN4ui03fOIRtdhGWyGfk8zafmn1Q1aX7ttuYiZ7/gr8igdmeKYZacWg==",
                             Role = "Admin"
                         },
                         new
                         {
                             UserId = new Guid("22222222-2222-2222-2222-222222222222"),
                             ContactNo = "9123456780",
-                            CreatedAt = new DateTime(2025, 7, 15, 11, 55, 39, 117, DateTimeKind.Utc).AddTicks(1803),
+                            CreatedAt = new DateTime(2025, 7, 22, 4, 20, 50, 296, DateTimeKind.Utc).AddTicks(7891),
                             Email = "reception@hams.com",
                             IsActive = true,
-                            PasswordHash = "AQAAAAIAAYagAAAAEBY3DIkiKF9vlK9/PzGAESLhlZK7elf/dpaiAmb1CPA4Ulr9YZhzvmVzWzXdW4VvBQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAECd+0C/LjQDFcTrjfeyfO+XPePC1SzTLnMxoSDWLdibyLmhFE8uSrK4q36/VqraPAA==",
                             Role = "Receptionist"
                         });
                 });

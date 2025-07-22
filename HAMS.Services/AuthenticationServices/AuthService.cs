@@ -92,20 +92,20 @@ namespace HAMS.Services.AuthenticationServices
             await context.SaveChangesAsync();
             return true;
         }
-        public async Task<bool> ValidateCredentialsAsync(UserLogin model)
+        public async Task<User?> ValidateCredentialsAsync(UserLogin model)
         {
             var user = await context.Users.SingleOrDefaultAsync(u => u.Email == model.Email);
             if (user == null)
             {
-                return false;
+                return null;
             } 
 
             var result = hasher.VerifyHashedPassword(user, user.PasswordHash, model.Password);
             if (result != PasswordVerificationResult.Success)
             {
-                return false;
+                return null;
             }
-            return true;
+            return user;
         }
     }
 }

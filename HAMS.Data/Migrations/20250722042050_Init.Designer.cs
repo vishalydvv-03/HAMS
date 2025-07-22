@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HAMS.Data.Migrations
 {
     [DbContext(typeof(HamsDbContext))]
-    [Migration("20250715114217_Add Navigation Property On Appointment")]
-    partial class AddNavigationPropertyOnAppointment
+    [Migration("20250722042050_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -86,7 +86,7 @@ namespace HAMS.Data.Migrations
                         new
                         {
                             DepartmentId = 1,
-                            CreatedAt = new DateTime(2025, 7, 15, 11, 42, 16, 952, DateTimeKind.Utc).AddTicks(1755),
+                            CreatedAt = new DateTime(2025, 7, 22, 4, 20, 50, 141, DateTimeKind.Utc).AddTicks(9718),
                             DeptName = "Cardiology",
                             Description = "Heart & vascular care",
                             IsActive = true
@@ -94,7 +94,7 @@ namespace HAMS.Data.Migrations
                         new
                         {
                             DepartmentId = 2,
-                            CreatedAt = new DateTime(2025, 7, 15, 11, 42, 16, 952, DateTimeKind.Utc).AddTicks(1759),
+                            CreatedAt = new DateTime(2025, 7, 22, 4, 20, 50, 141, DateTimeKind.Utc).AddTicks(9720),
                             DeptName = "Orthopedics",
                             Description = "Bones, joints & spine",
                             IsActive = true
@@ -102,7 +102,7 @@ namespace HAMS.Data.Migrations
                         new
                         {
                             DepartmentId = 3,
-                            CreatedAt = new DateTime(2025, 7, 15, 11, 42, 16, 952, DateTimeKind.Utc).AddTicks(1761),
+                            CreatedAt = new DateTime(2025, 7, 22, 4, 20, 50, 141, DateTimeKind.Utc).AddTicks(9722),
                             DeptName = "Dermatology",
                             Description = "Skin & hair",
                             IsActive = true
@@ -271,20 +271,20 @@ namespace HAMS.Data.Migrations
                         {
                             UserId = new Guid("11111111-1111-1111-1111-111111111111"),
                             ContactNo = "9876543210",
-                            CreatedAt = new DateTime(2025, 7, 15, 11, 42, 17, 27, DateTimeKind.Utc).AddTicks(9698),
+                            CreatedAt = new DateTime(2025, 7, 22, 4, 20, 50, 217, DateTimeKind.Utc).AddTicks(884),
                             Email = "admin@hams.com",
                             IsActive = true,
-                            PasswordHash = "AQAAAAIAAYagAAAAEMqmDroSqgHVUr56Il6k+8NDMIEIjyposmf0AdLr46RZckFWTV1pQE3kBwKv7TU0GQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAECaVhtvDOJZJN4ui03fOIRtdhGWyGfk8zafmn1Q1aX7ttuYiZ7/gr8igdmeKYZacWg==",
                             Role = "Admin"
                         },
                         new
                         {
                             UserId = new Guid("22222222-2222-2222-2222-222222222222"),
                             ContactNo = "9123456780",
-                            CreatedAt = new DateTime(2025, 7, 15, 11, 42, 17, 107, DateTimeKind.Utc).AddTicks(7278),
+                            CreatedAt = new DateTime(2025, 7, 22, 4, 20, 50, 296, DateTimeKind.Utc).AddTicks(7891),
                             Email = "reception@hams.com",
                             IsActive = true,
-                            PasswordHash = "AQAAAAIAAYagAAAAEF2l1n8HMlTje6/JSowr6FcReMH6+E4uxZ3K/ofgfnC0FpWBNYRVaXrhMAIHulrKKA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAECd+0C/LjQDFcTrjfeyfO+XPePC1SzTLnMxoSDWLdibyLmhFE8uSrK4q36/VqraPAA==",
                             Role = "Receptionist"
                         });
                 });

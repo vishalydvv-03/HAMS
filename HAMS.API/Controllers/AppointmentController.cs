@@ -1,5 +1,6 @@
 ﻿using HAMS.Domain.Models.AppointmentModels;
 using HAMS.Services.AppointmentServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Runtime.InteropServices;
@@ -17,6 +18,7 @@ namespace HAMS.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles ="Receptionist")]
         public async Task<IActionResult> BookAppointment(AddAppointment model)
         {
             var result = await service.BookAsync(model);

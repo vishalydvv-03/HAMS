@@ -4128,23 +4128,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\visha\\.nuget\\packages\\": {},
+    "C:\\Users\\Nimap\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\visha\\source\\repos\\HAMS\\HAMS.Data\\HAMS.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Nimap\\Desktop\\HAMS\\HAMS.Data\\HAMS.Data.csproj",
       "projectName": "HAMS.Data",
-      "projectPath": "C:\\Users\\visha\\source\\repos\\HAMS\\HAMS.Data\\HAMS.Data.csproj",
-      "packagesPath": "C:\\Users\\visha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\visha\\source\\repos\\HAMS\\HAMS.Data\\obj\\",
+      "projectPath": "C:\\Users\\Nimap\\Desktop\\HAMS\\HAMS.Data\\HAMS.Data.csproj",
+      "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nimap\\Desktop\\HAMS\\HAMS.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\visha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4159,8 +4159,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\visha\\source\\repos\\HAMS\\HAMS.Domain\\HAMS.Domain.csproj": {
-              "projectPath": "C:\\Users\\visha\\source\\repos\\HAMS\\HAMS.Domain\\HAMS.Domain.csproj"
+            "C:\\Users\\Nimap\\Desktop\\HAMS\\HAMS.Domain\\HAMS.Domain.csproj": {
+              "projectPath": "C:\\Users\\Nimap\\Desktop\\HAMS\\HAMS.Domain\\HAMS.Domain.csproj"
             }
           }
         }

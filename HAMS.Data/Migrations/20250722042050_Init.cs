@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace HAMS.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class ReMigration : Migration
+    public partial class Init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -145,14 +145,37 @@ namespace HAMS.Data.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "MedicalRecords",
+                columns: table => new
+                {
+                    RecordId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AppointmentId = table.Column<int>(type: "int", nullable: false),
+                    VisitNotes = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    Prescription = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    FollowUpInstructions = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MedicalRecords", x => x.RecordId);
+                    table.ForeignKey(
+                        name: "FK_MedicalRecords_Appointments_AppointmentId",
+                        column: x => x.AppointmentId,
+                        principalTable: "Appointments",
+                        principalColumn: "AppointmentId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.InsertData(
                 table: "Departments",
                 columns: new[] { "DepartmentId", "CreatedAt", "DeptName", "Description", "IsActive" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2025, 7, 15, 7, 17, 45, 648, DateTimeKind.Utc).AddTicks(2596), "Cardiology", "Heart & vascular care", true },
-                    { 2, new DateTime(2025, 7, 15, 7, 17, 45, 648, DateTimeKind.Utc).AddTicks(2598), "Orthopedics", "Bones, joints & spine", true },
-                    { 3, new DateTime(2025, 7, 15, 7, 17, 45, 648, DateTimeKind.Utc).AddTicks(2599), "Dermatology", "Skin & hair", true }
+                    { 1, new DateTime(2025, 7, 22, 4, 20, 50, 141, DateTimeKind.Utc).AddTicks(9718), "Cardiology", "Heart & vascular care", true },
+                    { 2, new DateTime(2025, 7, 22, 4, 20, 50, 141, DateTimeKind.Utc).AddTicks(9720), "Orthopedics", "Bones, joints & spine", true },
+                    { 3, new DateTime(2025, 7, 22, 4, 20, 50, 141, DateTimeKind.Utc).AddTicks(9722), "Dermatology", "Skin & hair", true }
                 });
 
             migrationBuilder.InsertData(
@@ -160,8 +183,8 @@ namespace HAMS.Data.Migrations
                 columns: new[] { "UserId", "ContactNo", "CreatedAt", "Email", "IsActive", "PasswordHash", "Role" },
                 values: new object[,]
                 {
-                    { new Guid("11111111-1111-1111-1111-111111111111"), "9876543210", new DateTime(2025, 7, 15, 7, 17, 45, 704, DateTimeKind.Utc).AddTicks(4208), "admin@hams.com", true, "AQAAAAIAAYagAAAAEO2xRC5/5dniXvkhbxSY8JU31nQHQeg5psnki/I2Y2N6iazDAtdhW0aaszLl1xEoKQ==", "Admin" },
-                    { new Guid("22222222-2222-2222-2222-222222222222"), "9123456780", new DateTime(2025, 7, 15, 7, 17, 45, 767, DateTimeKind.Utc).AddTicks(3548), "reception@hams.com", true, "AQAAAAIAAYagAAAAEKwqXlR/7OM6KEPjVoyXtCHg9w5aricNiYI7khOZCdLiSctTRJjsk7lXIQoqbbiTTQ==", "Receptionist" }
+                    { new Guid("11111111-1111-1111-1111-111111111111"), "9876543210", new DateTime(2025, 7, 22, 4, 20, 50, 217, DateTimeKind.Utc).AddTicks(884), "admin@hams.com", true, "AQAAAAIAAYagAAAAECaVhtvDOJZJN4ui03fOIRtdhGWyGfk8zafmn1Q1aX7ttuYiZ7/gr8igdmeKYZacWg==", "Admin" },
+                    { new Guid("22222222-2222-2222-2222-222222222222"), "9123456780", new DateTime(2025, 7, 22, 4, 20, 50, 296, DateTimeKind.Utc).AddTicks(7891), "reception@hams.com", true, "AQAAAAIAAYagAAAAECd+0C/LjQDFcTrjfeyfO+XPePC1SzTLnMxoSDWLdibyLmhFE8uSrK4q36/VqraPAA==", "Receptionist" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -183,22 +206,31 @@ namespace HAMS.Data.Migrations
                 name: "IX_DoctorSchedules_DoctorId",
                 table: "DoctorSchedules",
                 column: "DoctorId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_MedicalRecords_AppointmentId",
+                table: "MedicalRecords",
+                column: "AppointmentId",
+                unique: true);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Appointments");
-
-            migrationBuilder.DropTable(
                 name: "DoctorSchedules");
 
             migrationBuilder.DropTable(
-                name: "Patients");
+                name: "MedicalRecords");
+
+            migrationBuilder.DropTable(
+                name: "Appointments");
 
             migrationBuilder.DropTable(
                 name: "Doctors");
+
+            migrationBuilder.DropTable(
+                name: "Patients");
 
             migrationBuilder.DropTable(
                 name: "Departments");

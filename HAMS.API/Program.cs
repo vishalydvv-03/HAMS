@@ -6,11 +6,15 @@ using HAMS.Services.AuthenticationServices;
 using HAMS.Services.DepartmentServices;
 using HAMS.Services.DoctorScheduleServices;
 using HAMS.Services.DoctorServices;
+using HAMS.Services.JwtTokenServices;
 using HAMS.Services.MedicalRecordServices;
 using HAMS.Services.PatientServices;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using System.Reflection;
+using System.Text;
 using System.Text.Json.Serialization;
 
 namespace HAMS.API
@@ -37,6 +41,25 @@ namespace HAMS.API
             builder.Services.AddScoped<IPatientService, PatientService>();
             builder.Services.AddScoped<IDoctorService, DoctorService>();
             builder.Services.AddScoped<IMedicalRecordService, MedicalRecordService>();
+            builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+
+            //Jwt Configuration
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+
+                    ValidIssuer = builder.Configuration["Jwt:Issuer"],
+                    ValidAudience = builder.Configuration["Jwt:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+                };
+            });
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(c =>
@@ -56,6 +79,7 @@ namespace HAMS.API
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

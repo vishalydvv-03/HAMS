@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HAMS.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/doctors")]
     [ApiController]
     public class DoctorController : ControllerBase
     {

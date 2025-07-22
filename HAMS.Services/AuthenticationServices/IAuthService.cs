@@ -1,4 +1,5 @@
-﻿using HAMS.Domain.Models.AuthenticationModel;
+﻿using HAMS.Domain.Entities;
+using HAMS.Domain.Models.AuthenticationModel;
 
 
 namespace HAMS.Services.AuthenticationServices
@@ -7,6 +8,6 @@ namespace HAMS.Services.AuthenticationServices
     {
         Task<bool> RegisterPatientAsync(RegisterPatient model);
         Task<bool> RegisterDoctorAsync(RegisterDoctor model);
-        Task<bool> ValidateCredentialsAsync(UserLogin model);
+        Task<User?> ValidateCredentialsAsync(UserLogin model);
     }
 }
