@@ -30,8 +30,9 @@ namespace HAMS.Utility.UtilityHelpers.Email
 
             using (var smtp = new SmtpClient())
             {
-                await smtp.ConnectAsync(config["Email:SmtpServer"], int.Parse(config["Email:Port"]), true);
-                await smtp.AuthenticateAsync(config["Email:Username"], config["Email:Password"]);
+                await smtp.ConnectAsync(config["Email:SmtpServer"], int.Parse(config["Email:Port"]!), true);
+                var password = Encoding.UTF8.GetString(Convert.FromBase64String(config["Email:Password"]!));
+                await smtp.AuthenticateAsync(config["Email:Username"], password);
                 await smtp.SendAsync(email);
                 await smtp.DisconnectAsync(true);
             }

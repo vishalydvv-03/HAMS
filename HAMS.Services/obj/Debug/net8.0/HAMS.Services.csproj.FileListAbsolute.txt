@@ -32,5 +32,7 @@ C:\Users\Nimap\Desktop\HAMS\HAMS.Services\obj\Debug\net8.0\HAMS.Services.dll
 C:\Users\Nimap\Desktop\HAMS\HAMS.Services\obj\Debug\net8.0\refint\HAMS.Services.dll
 C:\Users\Nimap\Desktop\HAMS\HAMS.Services\obj\Debug\net8.0\HAMS.Services.pdb
 C:\Users\Nimap\Desktop\HAMS\HAMS.Services\obj\Debug\net8.0\ref\HAMS.Services.dll
-C:\Users\Nimap\Desktop\HAMS\HAMS.Services\bin\Debug\net8.0\HAMS.Persistence.dll
-C:\Users\Nimap\Desktop\HAMS\HAMS.Services\bin\Debug\net8.0\HAMS.Persistence.pdb
+C:\Users\Nimap\Desktop\HAMS\HAMS.Services\bin\Debug\net8.0\HAMS.Data.dll
+C:\Users\Nimap\Desktop\HAMS\HAMS.Services\bin\Debug\net8.0\HAMS.Utility.dll
+C:\Users\Nimap\Desktop\HAMS\HAMS.Services\bin\Debug\net8.0\HAMS.Data.pdb
+C:\Users\Nimap\Desktop\HAMS\HAMS.Services\bin\Debug\net8.0\HAMS.Utility.pdb

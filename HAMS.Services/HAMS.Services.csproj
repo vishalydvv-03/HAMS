@@ -7,8 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HAMS.Data\HAMS.Persistence.csproj" />
+    <ProjectReference Include="..\HAMS.Data\HAMS.Data.csproj" />
     <ProjectReference Include="..\HAMS.Domain\HAMS.Domain.csproj" />
+    <ProjectReference Include="..\HAMS.Utility\HAMS.Utility.csproj" />
   </ItemGroup>
 
 </Project>
