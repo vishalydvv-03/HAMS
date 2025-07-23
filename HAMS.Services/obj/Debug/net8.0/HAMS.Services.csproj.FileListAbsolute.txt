@@ -19,9 +19,7 @@ C:\Users\visha\source\repos\HAMS\HAMS.Services\obj\Debug\net8.0\ref\HAMS.Service
 C:\Users\Nimap\Desktop\HAMS\HAMS.Services\bin\Debug\net8.0\HAMS.Services.deps.json
 C:\Users\Nimap\Desktop\HAMS\HAMS.Services\bin\Debug\net8.0\HAMS.Services.dll
 C:\Users\Nimap\Desktop\HAMS\HAMS.Services\bin\Debug\net8.0\HAMS.Services.pdb
-C:\Users\Nimap\Desktop\HAMS\HAMS.Services\bin\Debug\net8.0\HAMS.Data.dll
 C:\Users\Nimap\Desktop\HAMS\HAMS.Services\bin\Debug\net8.0\HAMS.Domain.dll
-C:\Users\Nimap\Desktop\HAMS\HAMS.Services\bin\Debug\net8.0\HAMS.Data.pdb
 C:\Users\Nimap\Desktop\HAMS\HAMS.Services\bin\Debug\net8.0\HAMS.Domain.pdb
 C:\Users\Nimap\Desktop\HAMS\HAMS.Services\obj\Debug\net8.0\HAMS.Services.csproj.AssemblyReference.cache
 C:\Users\Nimap\Desktop\HAMS\HAMS.Services\obj\Debug\net8.0\HAMS.Services.GeneratedMSBuildEditorConfig.editorconfig
@@ -34,3 +32,5 @@ C:\Users\Nimap\Desktop\HAMS\HAMS.Services\obj\Debug\net8.0\HAMS.Services.dll
 C:\Users\Nimap\Desktop\HAMS\HAMS.Services\obj\Debug\net8.0\refint\HAMS.Services.dll
 C:\Users\Nimap\Desktop\HAMS\HAMS.Services\obj\Debug\net8.0\HAMS.Services.pdb
 C:\Users\Nimap\Desktop\HAMS\HAMS.Services\obj\Debug\net8.0\ref\HAMS.Services.dll
+C:\Users\Nimap\Desktop\HAMS\HAMS.Services\bin\Debug\net8.0\HAMS.Persistence.dll
+C:\Users\Nimap\Desktop\HAMS\HAMS.Services\bin\Debug\net8.0\HAMS.Persistence.pdb

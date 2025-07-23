@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HAMS.API", "HAMS.API\HAMS.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HAMS.Domain", "HAMS.Domain\HAMS.Domain.csproj", "{3DEEDA81-F401-434C-BAF2-72249552EC17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HAMS.Data", "HAMS.Data\HAMS.Data.csproj", "{FDA6DE6F-BAA6-424A-994D-0DBECD4D754D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HAMS.Persistence", "HAMS.Data\HAMS.Persistence.csproj", "{FDA6DE6F-BAA6-424A-994D-0DBECD4D754D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HAMS.Services", "HAMS.Services\HAMS.Services.csproj", "{82260CA5-3A47-4854-902C-86B4CA9BE31C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HAMS.Utility", "HAMS.Utility\HAMS.Utility.csproj", "{DC3A9E35-7036-4F0B-B3F5-3CB8961B997F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{82260CA5-3A47-4854-902C-86B4CA9BE31C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82260CA5-3A47-4854-902C-86B4CA9BE31C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82260CA5-3A47-4854-902C-86B4CA9BE31C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC3A9E35-7036-4F0B-B3F5-3CB8961B997F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC3A9E35-7036-4F0B-B3F5-3CB8961B997F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC3A9E35-7036-4F0B-B3F5-3CB8961B997F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC3A9E35-7036-4F0B-B3F5-3CB8961B997F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

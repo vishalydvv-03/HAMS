@@ -963,20 +963,6 @@
           }
         }
       },
-      "HAMS.Data/1.0.0": {
-        "dependencies": {
-          "HAMS.Domain": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "8.0.18",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.18",
-          "Microsoft.Extensions.Identity.Core": "8.0.18"
-        },
-        "runtime": {
-          "HAMS.Data.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "HAMS.Domain/1.0.0": {
         "runtime": {
           "HAMS.Domain.dll": {
@@ -985,10 +971,24 @@
           }
         }
       },
+      "HAMS.Persistence/1.0.0": {
+        "dependencies": {
+          "HAMS.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.18",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.18",
+          "Microsoft.Extensions.Identity.Core": "8.0.18"
+        },
+        "runtime": {
+          "HAMS.Persistence.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "HAMS.Services/1.0.0": {
         "dependencies": {
-          "HAMS.Data": "1.0.0",
-          "HAMS.Domain": "1.0.0"
+          "HAMS.Domain": "1.0.0",
+          "HAMS.Persistence": "1.0.0"
         },
         "runtime": {
           "HAMS.Services.dll": {
@@ -1565,12 +1565,12 @@
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
-    "HAMS.Data/1.0.0": {
+    "HAMS.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "HAMS.Domain/1.0.0": {
+    "HAMS.Persistence/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

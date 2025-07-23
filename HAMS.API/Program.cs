@@ -9,6 +9,7 @@ using HAMS.Services.DoctorServices;
 using HAMS.Services.JwtTokenServices;
 using HAMS.Services.MedicalRecordServices;
 using HAMS.Services.PatientServices;
+using HAMS.Utility.UtilityHelpers.Email;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -42,6 +43,7 @@ namespace HAMS.API
             builder.Services.AddScoped<IDoctorService, DoctorService>();
             builder.Services.AddScoped<IMedicalRecordService, MedicalRecordService>();
             builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+            builder.Services.AddScoped<IEmailService, EmailService>();
 
             //Jwt Configuration
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

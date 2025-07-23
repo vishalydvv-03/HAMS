@@ -1,0 +1,16 @@
+C:\Users\Nimap\Desktop\HAMS\HAMS.Utility\bin\Debug\net8.0\HAMS.Utility.deps.json
+C:\Users\Nimap\Desktop\HAMS\HAMS.Utility\bin\Debug\net8.0\HAMS.Utility.dll
+C:\Users\Nimap\Desktop\HAMS\HAMS.Utility\bin\Debug\net8.0\HAMS.Utility.pdb
+C:\Users\Nimap\Desktop\HAMS\HAMS.Utility\bin\Debug\net8.0\HAMS.Domain.dll
+C:\Users\Nimap\Desktop\HAMS\HAMS.Utility\bin\Debug\net8.0\HAMS.Domain.pdb
+C:\Users\Nimap\Desktop\HAMS\HAMS.Utility\obj\Debug\net8.0\HAMS.Utility.csproj.AssemblyReference.cache
+C:\Users\Nimap\Desktop\HAMS\HAMS.Utility\obj\Debug\net8.0\HAMS.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nimap\Desktop\HAMS\HAMS.Utility\obj\Debug\net8.0\HAMS.Utility.AssemblyInfoInputs.cache
+C:\Users\Nimap\Desktop\HAMS\HAMS.Utility\obj\Debug\net8.0\HAMS.Utility.AssemblyInfo.cs
+C:\Users\Nimap\Desktop\HAMS\HAMS.Utility\obj\Debug\net8.0\HAMS.Utility.csproj.CoreCompileInputs.cache
+C:\Users\Nimap\Desktop\HAMS\HAMS.Utility\obj\Debug\net8.0\HAMS.Utility.sourcelink.json
+C:\Users\Nimap\Desktop\HAMS\HAMS.Utility\obj\Debug\net8.0\HAMS.Uti.869AE682.Up2Date
+C:\Users\Nimap\Desktop\HAMS\HAMS.Utility\obj\Debug\net8.0\HAMS.Utility.dll
+C:\Users\Nimap\Desktop\HAMS\HAMS.Utility\obj\Debug\net8.0\refint\HAMS.Utility.dll
+C:\Users\Nimap\Desktop\HAMS\HAMS.Utility\obj\Debug\net8.0\HAMS.Utility.pdb
+C:\Users\Nimap\Desktop\HAMS\HAMS.Utility\obj\Debug\net8.0\ref\HAMS.Utility.dll

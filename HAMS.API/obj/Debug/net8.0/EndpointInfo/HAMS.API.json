@@ -395,7 +395,7 @@
         }
       }
     },
-    "/api/Doctor": {
+    "/api/doctors": {
       "get": {
         "tags": [
           "Doctor"
@@ -407,7 +407,7 @@
         }
       }
     },
-    "/api/Doctor/{id}": {
+    "/api/doctors/{id}": {
       "get": {
         "tags": [
           "Doctor"
@@ -491,7 +491,7 @@
         }
       }
     },
-    "/api/Doctor/{doctorId}/appointments": {
+    "/api/doctors/{doctorId}/appointments": {
       "get": {
         "tags": [
           "Doctor"

@@ -226,85 +226,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "HAMS.API.Controllers.DoctorController",
-    "Method": "GetAll",
-    "RelativePath": "api/Doctor",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HAMS.API.Controllers.DoctorController",
-    "Method": "GetAppointments",
-    "RelativePath": "api/Doctor/{doctorId}/appointments",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "doctorId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HAMS.API.Controllers.DoctorController",
-    "Method": "GetById",
-    "RelativePath": "api/Doctor/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HAMS.API.Controllers.DoctorController",
-    "Method": "Update",
-    "RelativePath": "api/Doctor/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "model",
-        "Type": "HAMS.Domain.Models.DoctorModels.UpdateDoctor",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HAMS.API.Controllers.DoctorController",
-    "Method": "Delete",
-    "RelativePath": "api/Doctor/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "HAMS.API.Controllers.DoctorScheduleController",
     "Method": "AddDoctorSchedule",
     "RelativePath": "api/doctor/schedule",
@@ -379,6 +300,85 @@
         "Name": "day",
         "Type": "System.String",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMS.API.Controllers.DoctorController",
+    "Method": "GetAll",
+    "RelativePath": "api/doctors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMS.API.Controllers.DoctorController",
+    "Method": "GetAppointments",
+    "RelativePath": "api/doctors/{doctorId}/appointments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMS.API.Controllers.DoctorController",
+    "Method": "GetById",
+    "RelativePath": "api/doctors/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMS.API.Controllers.DoctorController",
+    "Method": "Update",
+    "RelativePath": "api/doctors/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "HAMS.Domain.Models.DoctorModels.UpdateDoctor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMS.API.Controllers.DoctorController",
+    "Method": "Delete",
+    "RelativePath": "api/doctors/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
